@@ -8,10 +8,10 @@ class User extends Component {
                 <td>{this.props.address}</td>
                 <td>{this.props.address2}</td>
                 <td>{this.props.city}</td>
-                <td>{this.props.state}</td>
+                <td>{this.props.stateID}</td>
                 <td>{this.props.zip}</td>
                 <td>{this.props.country}</td>
-                <td>{this.props.date}</td>
+                <td>{this.props.regDate}</td>
             </tr>
 
         );

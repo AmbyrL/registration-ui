@@ -20,6 +20,7 @@ class Admin extends Component {
         });
         return (
             <div className="admin-form">
+                <h1>Registered Users Report</h1>
                 <table style={{border:"1px solid black"}}>
                     <thead>
                         <tr>
