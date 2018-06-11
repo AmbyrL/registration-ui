@@ -151,10 +151,10 @@ class Registration extends Component {
             formData.append("regDate", new Date().toDateString());
 
 
-            // axios.post(Config.apiBaseUrl+'user', formData)
-            //     .then((result) => {
-            //         console.log(result)
-            //     });
+            axios.post(Config.apiBaseUrl+'user', formData)
+                .then((result) => {
+                    console.log(result)
+                });
 
             this.props.history.push("/Registered")
         }else{
