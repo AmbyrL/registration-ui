@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import Config from './Config'
-import Registered from './Registered'
+
 
 class Registration extends Component {
 
@@ -119,14 +119,14 @@ class Registration extends Component {
             }
         }
 
-        //country
+
         if(!this.country.value){
             formIsValid = false;
             errors["country"] = "Cannot be empty";
         }
 
         if(typeof this.country.value !== "undefined"){
-            if(!this.country.value !=="US"){
+            if(this.country.value !=="US"){
                 formIsValid = false;
                 errors["country"] = "Must be US";
             }
@@ -157,9 +157,8 @@ class Registration extends Component {
                 });
 
             this.props.history.push("/Registered")
-        }else{
-            alert("Form has errors.")
         }
+
 
 
     }
